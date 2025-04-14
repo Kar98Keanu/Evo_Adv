@@ -1,9 +1,10 @@
 #ifndef EVO_TRACE_H
 #define EVO_TRACE_H
 
-#include <EvoTCS34725.h>
-#include <EvoMotor.h>
-#include <EvoMotorPair.h>
+#include <Evo.h>
+#include "sensors/EvoTCS34725.h"  // Corrected path to include EvoTCS34725
+#include "motors/EvoMotor.h"
+#include "robotics/EvoMotorPair.h"
 
 /**
  * @class EvoTrace
@@ -18,7 +19,7 @@ public:
      * @param leftMotor Pointer to the left motor.
      * @param rightMotor Pointer to the right motor.
      */
-    EvoTrace(EvoTCS34725 *leftSensor, EvoTCS34725 *rightSensor, EvoMotor *leftMotor, EvoMotor *rightMotor);
+    EvoTrace(EvoTCS34725 *leftSensor, EvoTCS34725 *rightSensor, EvoMotor *leftMotor, EvoMotor *rightMotor); // Constructor
 
     /**
      * @brief Initializes the sensors and motors.

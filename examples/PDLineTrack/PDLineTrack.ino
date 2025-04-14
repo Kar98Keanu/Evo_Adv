@@ -1,4 +1,5 @@
 #include <Evo.h>
+#include <EvoTrace.h>
 
 EVOX1 evo;
 
